@@ -5,8 +5,6 @@ import store from './store'
 import './assets/styles/fonts/icon.css'
 import './assets/styles/fonts/reset.scss'
 Vue.config.productionTip = false
-
-
 new Vue({
   router,
   store,
