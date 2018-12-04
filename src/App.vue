@@ -4,7 +4,17 @@
   </div>
 </template>
 <script>
-  export default {}
+import {mapGetters} from 'vuex'
+
+  export default {
+    computed: {
+
+    },
+    mounted () {
+
+
+    }
+  }
   document.addEventListener('DOMContentLoaded',()=>{
     const html = document.querySelector('html')
     let fontSize = window.innerWidth / 10
