@@ -4,13 +4,15 @@ export const ebookMixin = {
   computed: {
     ...mapGetters([
       'fileName',
-      'menuVisible'
+      'menuVisible',
+      'settingVisible'
     ])
   },
   methods: {
     ...mapActions([
       'setMenuVisible',
-      'setFileName'
+      'setFileName',
+      'setSettingVisible'
     ])
   }
 }
