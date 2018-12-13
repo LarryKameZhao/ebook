@@ -2,7 +2,7 @@
   <div>
     <transition class="slide-down">
       <div class="menu-wrapper" v-show="menuVisible">
-        <div class="icon-wrapper">
+        <div class="icon-wrapper" @click="showSetting(3)">
           <span class="icon-menu"></span>
         </div>
         <div class="icon-wrapper">
@@ -17,25 +17,29 @@
       </div>
     </transition>
     <ebook-setting-font></ebook-setting-font>
+    <ebook-slide></ebook-slide>
   </div>
 </template>
 
 <script>
 import { ebookMixin } from "../../utils/mixin";
 import EbookSettingFont from './EbookSettingFont'
+import EbookSlide from './EbookSlide'
 export default {
   name: 'EbookMenu',
   mixins: [ebookMixin],
   components: {
     EbookSettingFont,
+    EbookSlide
   },
   methods: {
-    showSetting () {
+    showSetting (id) {
       // this.isSettingShow = true
+       this.setSettingVisible(id)
     }
 
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

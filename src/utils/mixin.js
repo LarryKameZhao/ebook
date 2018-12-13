@@ -13,6 +13,11 @@ export const ebookMixin = {
       'setMenuVisible',
       'setFileName',
       'setSettingVisible'
-    ])
+    ]),
+    hideTitleAndMenu() {
+     this.setMenuVisible(false)
+     this.setSettingVisible(-1)
+     // this.setFontFamilyVisible(false)
+   },
   }
 }

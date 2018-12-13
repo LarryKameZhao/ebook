@@ -37,10 +37,10 @@ global.ePub = Epub
         // this.$store.dispatch('setMenuVisible', !this.menuVisible)
         this.setMenuVisible(!this.menuVisible)
       },
-      hideTitleAndMenu () {
-        // this.$store.dispatch('setMenuVisible', false)
-        this.setMenuVisible(false)
-      },
+      // hideTitleAndMenu () {
+      //   // this.$store.dispatch('setMenuVisible', false)
+      //   this.setMenuVisible(false)
+      // },
       initEpub () {
         const url = 'http://localhost:9000/epub/'
          + this.fileName + '.epub'
@@ -87,6 +87,7 @@ global.ePub = Epub
         .then(() => {
           this.initEpub()
         })
+
     },
   }
 </script>
